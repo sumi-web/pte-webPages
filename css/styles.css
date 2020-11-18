@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: 'Jost',
+    sans-serif;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-family: 'Merienda', cursive;
+  color: #1C335F;
+  font-weight: 600;
+
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p,
+h5,
+h6,
+span {
+  font-family: 'Jost', sans-serif;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  width: 100%;
+  height: 2px;
+  background-color: #f4bf00;
+  max-width: 8rem;
+  margin: 0 auto 2rem auto;
+}
+
+/* ***********pte main head section************** */
+.main-section {
+  position: relative;
+  padding: 5rem 0;
+  background-color: #f7f7f7;
+}
+
+.main-section h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.main-head-content p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #333;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.lists-about ul {
+  position: relative;
+  text-align: left;
+  border: 2px solid #1C335F;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.lists-about li {
+  display: flex;
+  justify-content: flex-start;
+  font-size: .9rem;
+  padding: .5rem;
+  border-bottom: 1px solid #1C335F;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.lists-about li:hover {
+  transform: scale(1.08);
+  z-index: 1;
+  background: #f4f6ff;
+  border-radius: 10px;
+  border: 1px solid #002347;
+  transition: all 0.2s linear;
+}
+
+
+.lists-about li:hover i {
+  color: #fff;
+  background-color: #f4bf00da;
+}
+
+.lists-about li:hover .list-topic {
+  color: #002347;
+}
+
+#last-link {
+  border-bottom: 1px solid transparent;
+}
+
+#last-link:hover {
+  border-bottom: 1px solid #002347;
+}
+
+.lists-about i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 45px;
+  height: 45px;
+  background: #d9ecf2;
+  border-radius: 50%;
+  margin: 0 .2rem;
+  /* border: 1px solid #f4bf00; */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-topic {
+  margin-left: 5px;
+  display: inline;
+  padding: 12px;
+  color: #343434;
+  font-weight: 600;
+}
+
+/* *************pte advantage section************ */
+.advantage-section {
+  padding: 3rem 0;
+}
+
+.advantage-box li {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.advantage-box i {
+  color: #f4bf00;
+  font-size: 1.5rem;
+  padding-top: 3px;
+}
+
+.advantage-box span {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #303030;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin-bottom: 8px;
+}
+
+.advantage-box b {
+  color: #1C335F;
+}
+
+/* ***********who accepts Pte academic**************** */
+.who-accepts {
+  padding: 3rem 0;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.who-accepts p {
+  color: #f4bf00;
+  font-size: 0.9rem;
+  margin: 0 auto .2rem auto;
+  font-weight: 500;
+}
+
+.who-accept-box {
+  padding: 1rem;
+  position: relative;
+  margin: 5px;
+}
+
+
+.who-accept-box span {
+  font-size: 1.8rem;
+  background-color: #002347e8;
+  color: #fff;
+  font-weight: 500;
+  /* transform: rotate(-90deg); */
+  /* display: inline-block; */
+  /* position: absolute;
+  top: 4rem;
+  left: -4rem; */
+  padding: 1px 12px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #f4bf0096;
+}
+
+.who-accept-box li {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 6px;
+}
+
+.who-accept-box i {
+  color: #f4bf00;
+  font-size: 1.3rem;
+  margin-right: 10px;
+}
+
+.who-accept-box h5 {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #202020;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
