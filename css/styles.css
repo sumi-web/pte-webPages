@@ -71,7 +71,7 @@ hr {
   border: none;
   width: 100%;
   height: 3px;
-  background-color: #f4bf00;
+  background-color: #ffb330;
   max-width: 8rem;
   margin: 0 auto 2rem auto;
 }
@@ -171,7 +171,7 @@ hr {
 /* **********about section************ */
 .about-section {
   padding: 3rem 0;
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
 }
 
 /* *************pte advantage section************ */
@@ -186,7 +186,7 @@ hr {
 }
 
 .advantage-box i {
-  color: #f4bf00;
+  color: #ffb330;
   font-size: 1.5rem;
   padding-top: 3px;
 }
@@ -212,10 +212,11 @@ hr {
 }
 
 .who-accepts p {
-  color: #f4bf00;
+  color: #ffb330;
   font-size: 0.9rem;
   margin: 0 auto .2rem auto;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .who-accept-box {
@@ -224,28 +225,51 @@ hr {
   margin: 5px;
 }
 
+.country-name {
+  background-color: #002347be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 3rem;
+  padding: .8rem 0 3.4rem 0;
+  border-radius: 8px;
+}
 
-.who-accept-box span {
-  font-size: 1.8rem;
-  background-color: #002347e8;
+.country-name img {
+  width: 100%;
+  max-width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 6%);
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.college-name {
+  position: relative;
+}
+
+
+.who-accept-box .country-name span {
+  font-size: 1.6rem;
   color: #fff;
   font-weight: 500;
-  padding: 1px 12px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #f4bf0096;
 }
 
 .who-accept-box li {
   display: flex;
-  align-items: center;
   text-align: left;
   margin-bottom: 6px;
 }
 
 .who-accept-box i {
-  color: #f4bf00;
+  color: #ffb330;
   font-size: 1.3rem;
   margin-right: 10px;
+  padding-top: 1px;
 }
 
 .who-accept-box h5 {
@@ -254,4 +278,180 @@ hr {
   color: #202020;
   letter-spacing: 1px;
   font-weight: 400;
+}
+
+/* ************eduvantage section************* */
+.eduvantage-section {
+  padding: 3rem 0;
+  background-color: #f7f7f7;
+}
+
+/* ********benefit section********* */
+
+.benefit-section {
+  padding: 3rem 0;
+}
+
+.benefit-section h1 {
+  margin-bottom: 1.5rem;
+}
+
+.benefit-box {
+  padding: 1rem;
+  margin: 5px;
+}
+
+.benefit-box li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.benefit-box i {
+  color: #ffb330;
+  font-size: 1.25rem;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.benefit-box span {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #202020;
+  letter-spacing: 1px;
+}
+
+/* ************pricing plan for french************ */
+
+.pricing-section {
+  padding: 3rem 0;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.pricing-box {
+  padding: .5rem 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 8px;
+  border-top: 4px solid #0023479f;
+  transition: box-shadow 0.2s linear;
+}
+
+.pricing-box:hover {
+  box-shadow: 0px 0px 17px 3px rgba(0, 0, 0, .3);
+}
+
+.pricing-box h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffb330;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.pricing-box p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #5b5656;
+  margin-bottom: 5px;
+}
+
+.pricing-box span {
+  color: #334f6c;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+.pricing-list {
+  margin: .3rem 0;
+}
+
+.pricing-list li {
+  margin-bottom: 2px;
+  padding: .4rem 0 .4rem 1.5rem;
+  position: relative;
+}
+
+.pricing-list li::before {
+  content: "\f064";
+  font-family: fontAwesome;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: #ffb330;
+}
+
+.pricing-list li h5 {
+  font-size: 1.25rem;
+  color: #3d3636;
+  font-weight: 400;
+}
+
+/* **********faq section********* */
+
+.faq-section {
+  padding: 3rem 0;
+  position: relative;
+}
+
+
+.faq-content {
+  text-align: left;
+}
+
+.btn-link {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.card {
+  margin-bottom: 5px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.accordion h4 {
+  font-size: 1.1rem;
+  color: #002347;
+  background-color: #f7f7f7;
+  display: inline-block;
+}
+
+.accordion h5 {
+  font-size: 1.05rem;
+  color: #ffb330;
+  display: inline-block;
+  font-size: 400;
+}
+
+.faq-content span {
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.faq-content .ques {
+  background-color: #334f6cfb;
+  font-size: 1.2rem;
+}
+
+.faq-content .ans {
+  background-color: #ffb330;
+  font-size: 1.2rem;
 }
