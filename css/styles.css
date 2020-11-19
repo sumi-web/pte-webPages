@@ -30,6 +30,7 @@ h1 {
   font-family: 'Merienda', cursive;
   color: #1C335F;
   font-weight: 600;
+  margin-bottom: .8rem;
 
 }
 
@@ -81,6 +82,23 @@ hr {
   position: relative;
   padding: 5rem 0;
   background-color: #f9f9f9;
+}
+
+.main-section .img1 {
+  position: absolute;
+  top: 56%;
+  right: 20%;
+}
+
+.main-section .img2 {
+  position: absolute;
+  top: 5%;
+  left: 4%;
+}
+
+.main-section .home-design img {
+  width: 100%;
+  max-width: 85%;
 }
 
 .main-section h1 {
@@ -168,12 +186,6 @@ hr {
   font-weight: 600;
 }
 
-/* **********about section************ */
-.about-section {
-  padding: 3rem 0;
-  background-color: #f7f7f7;
-}
-
 /* *************pte advantage section************ */
 .advantage-section {
   padding: 3rem 0;
@@ -205,10 +217,101 @@ hr {
   color: #1C335F;
 }
 
+/* **********about section************ */
+.about-section {
+  padding: 3rem 0;
+  position: relative;
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+.about-section-img1 {
+  position: absolute;
+  top: -10%;
+  left: -5%;
+}
+
+.about-section-img1 img {
+  width: 100%;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #202020;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.about-box {
+  padding: 1rem;
+}
+
+.about-img {
+  padding: 1.5rem 0 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-img::before {
+  content: "";
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #002347be;
+  z-index: -1;
+}
+
+.about-box h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #ffb330;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-box ul li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.about-box ul i {
+  color: #ffb330;
+  font-size: 1.25rem;
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+.about-box ul h5 {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #303030;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
 /* ***********who accepts Pte academic**************** */
+
 .who-accepts {
   padding: 3rem 0;
   position: relative;
+  overflow: hidden;
+}
+
+.who-accpets-img {
+  position: absolute;
+  bottom: 0;
+  right: -5%;
+}
+
+.who-accpets-img img {
+  width: 100%;
+  max-width: 80%;
 }
 
 .who-accepts p {
@@ -220,10 +323,18 @@ hr {
 }
 
 .who-accept-box {
-  padding: 1rem;
   position: relative;
-  margin: 5px;
+  margin: 20px 10px;
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.2);
+  border-radius: 25px 25px 10px 10px;
+  transition: all 0.2s linear;
 }
+
+.who-accept-box:hover {
+  box-shadow: 0 0 12px #0023479f;
+  transition: all 0.2s linear;
+}
+
 
 .country-name {
   background-color: #002347be;
@@ -231,15 +342,15 @@ hr {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 1.8rem;
   padding: .8rem 0 3.4rem 0;
-  border-radius: 8px;
+  border-radius: 20px 20px 40px 40px;
 }
 
 .country-name img {
   width: 100%;
-  max-width: 85px;
-  height: 85px;
+  max-width: 90px;
+  height: 90px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -250,11 +361,12 @@ hr {
 
 .college-name {
   position: relative;
+  padding: 1rem;
 }
 
 
 .who-accept-box .country-name span {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #fff;
   font-weight: 500;
 }
@@ -286,35 +398,25 @@ hr {
   background-color: #f7f7f7;
 }
 
-/* ********benefit section********* */
-
-.benefit-section {
-  padding: 3rem 0;
-}
-
-.benefit-section h1 {
-  margin-bottom: 1.5rem;
-}
-
-.benefit-box {
+.eduvantage-box {
   padding: 1rem;
   margin: 5px;
 }
 
-.benefit-box li {
+.eduvantage-box li {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
 }
 
-.benefit-box i {
+.eduvantage-box i {
   color: #ffb330;
   font-size: 1.25rem;
   margin-right: 10px;
   padding-top: 5px;
 }
 
-.benefit-box span {
+.eduvantage-box span {
   text-align: left;
   font-size: 1.2rem;
   color: #202020;
@@ -325,7 +427,6 @@ hr {
 
 .pricing-section {
   padding: 3rem 0;
-  background-color: #f7f7f7;
   position: relative;
 }
 
@@ -395,8 +496,8 @@ hr {
 .faq-section {
   padding: 3rem 0;
   position: relative;
+  background-color: #f9f9f9;
 }
-
 
 .faq-content {
   text-align: left;
@@ -454,4 +555,83 @@ hr {
 .faq-content .ans {
   background-color: #ffb330;
   font-size: 1.2rem;
+}
+
+/* **************media querries**************** */
+@media(max-width:466px) {
+  .pricing-list li::before {
+    left: -10px;
+  }
+
+  .pricing-list li h5 {
+    font-size: 1.15rem;
+  }
+}
+
+@media(max-width:376px) {
+  /* .main-section {
+    min-height: 90vh;
+  }
+
+  .about-gre h3 {
+    margin-bottom: 2rem;
+  }
+
+  .gre-imp-box i {
+    font-size: 1.6rem;
+  }
+
+  .gre-imp-box li {
+    margin-bottom: .8rem;
+  }
+
+  .gre-imp-box p {
+    font-size: 1.15rem;
+  }
+
+  .eduvantage-box li {
+    margin-bottom: 1rem;
+  }
+
+  .eduvantage-box h5 {
+    font-size: 1.15rem;
+  }
+
+  .schedule-box {
+    padding: 0;
+  }
+
+  .schedule-head {
+    padding: 1rem 1.4rem;
+  }
+
+  .schedule-body {
+    padding: 1rem;
+  }
+
+  .schedule-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .schedule-body span {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+ */
+
+  .pricing-list li::before {
+    left: -10px;
+  }
+
+  .pricing-box span {
+    font-size: 1.8rem;
+  }
+
+  .pricing-list li h5 {
+    font-size: 1.1rem;
+  }
+
+  .pricing-box p {
+    font-size: 1rem;
+  }
 }
